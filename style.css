@@ -90,7 +90,7 @@
 
 .home{
     display: flex;
-    background: url("images/wallpaper.png") no-repeat center;
+    background: url("wallpaper.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
