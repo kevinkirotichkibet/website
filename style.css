@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+/* nav bar styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.about, .skills, .about,.contact,footer{
+    font-family: 'Poppins',sans-serif;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+.navbar{
+    
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    padding: 20px 0;
+    background: rgb(97, 92, 109);
+    font-family: 'Ubuntu',sans-serif;
+    transition:  background 0.3s ease;
+}
+.navbar.scrolled {
+    background: #111;
+  }
+  
+.navbar .scrolled{
+    background: #111;
+    transition: background-color 200ms linear;
+}
+
+.navbar .sticky{
+    padding: auto;
+    background: rgb(0, 0, 0);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* for logo*/
+.navbar .logo a{
+    color:#fff;
+    font-weight: 600;
+    font-size: 55px;
+
+}
+.navbar .logo a span{
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.navbar .sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline;
+}
+.navbar .max-width .menu li a{
+    color: rgb(61, 210, 236);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    padding-left: 20px;
+}
+/* hovering control */
+
+.navbar .max-width .menu li a:hover{
+    color:red;
+}
+
+.menu-btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    /* display: none; */
+}
+/* home section styling */
+
+.home{
+    display: flex;
+    background: url("images/wallpaper.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.home .max-width{
+    margin: 0 auto 40px;
+
+}
+.home .home-content{
+    padding-top: 135px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 70px;
+    font-weight: 400;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+
+}
+.home .home-content .text-3 span{
+    color: red;
+    font-weight: 350;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: red;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid red;
+    font-size: 20px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+
+}
+.home .home-content a:hover{
+    background: none;
+    color: red;
+
+}
+
+section{
+    padding: 100px;
+}
+/* about styling */
+
+.about{
+    background: silver;
+    font-family: 'Poppins',sans-serif;
+
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: Verdana, sans-serif;
+    color: rgb(37, 3, 116);
+
+}
+.about .title::before{
+    content: "";
+    bottom: 0px;
+    left: 41%;
+    position: absolute;
+    width: 200px;
+    height: 6px;
+    background: #111;
+}
+/* .about .title::after{
+    content: "who am I";
+    bottom: -12px;
+    left: 40%;
+    position: absolute;
+    padding: 5px;
+    font-size: 20px;
+    color: red;
+    background: #fff;
+    transform: translateX(-50%);
+} */
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+.about .about-content .left{
+    width: 10px;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+/* .about .about-content .right{ */
+    /* width: 55px; */
+/* } */
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+.about  .about-content .text span{
+    
+    color: rgb(241, 103, 23);
+    
+}
+.about .about-content p{
+    font-size: 25px;
+    font-family: cursive;
+}
+/* .about .about-content .right p{
+    /* text-align: justify; */
+/* } */ 
+.about .about-content .right a{
+    display: inline-block;
+    background: red;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid red;
+    font-size: 20px;
+    padding: 20px 30px;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+    background: none;
+    color: red;
+}
+.skills{
+    background: silver;
+}
+/* skill section */
+.skills .max-width .skills-content{
+    /* display: flex;
+    flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .title{
+    color:rgb(37, 3, 116);
+    font-size: 35px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 300px;
+}
+
+.skills p{
+    font-size: 25px;
+    font-family: cursive;
+}
+/* Contact styling section */
+.contact{
+    background: silver;
+}
+.contact .sub-title-name{
+    color: red;
+}
+.contact .contact-content{
+    display: inline-block;
+    flex-wrap: wrap;
+    size: 10px;
+
+}
+.contact .contact-content .column{
+    width: calc(50% -30%);
+    display: inline-block;
+}
+.contact .contact-content .text{
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    
+}
+.contact .contact-content .left{
+    text-align: justify;
+}
+.contact .contact-content .contact .right{
+    align-content: right;
+
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .title{
+    color: rgb(37, 3, 116);
+    font-size: fantasy;
+    
+}
+.contact .contact-content .left .text{
+    color: rgb(241, 103, 23);
+    font-family: Verdana;
+    
+}
+/* Project styling */
+.projects{
+    background: silver;
+}
+.projects .title{
+    font-size: 35px;
+    color: rgb(37, 3, 116);
+    /* padding-left: 300px; */
+    font-weight: 600;
+
+}
+.projects .projects-content .column-left{
+    display: flex;
+}
+.projects .projects-content .column-left .project-example2{
+    
+    /* background: #111; */
+    margin-left: 10%;
+    text-align: center;
+}
+.projects .projects-content a{
+   
+    font-size: 25px;
+    color: rgb(241, 103, 23);
+    font-weight: 400;
+    text-align: center;
+}
+
+/* footer styling */
+footer{
+    background: #111;
+    padding: 20px 23px;
+}
+footer .span a{
+    color: red;
+    text-decoration: underline;
+}
+footer .span a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 950px){
+    .max-width{
+        padding: 0 50px;
+    }   
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        right: 0;
+        /* background: #111; */
+        padding-top: 80px;
+        text-align: center;
+        
+    }
+     
+    .menu-btn{
+        display: block;
+    } 
+    .menu-btn i.active:before{
+        content: "\food" ;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: inline-block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px;
+        font-size: 25px;
+    }
+
+}
+
